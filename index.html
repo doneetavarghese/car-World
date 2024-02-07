@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Page</title>
+</body>
+<h1 style="text-align: center;color: blue;font-size: xx-large;font-weight: bold; margin-top: 30px;">Car world</h1>
+<div class="row my-5">
+    <div class="col-lg-1"></div>
+     <!-- card 1 start -->
+    <div class="col-lg-4">
+    <!-- card 1 start -->
+        <div style="box-shadow: 2px 2px 2px gray; height: 400px;" class="card ">
+            <div class="card-header";>
+             <span style="color: blue; font-size: x-large;font-weight:500;text-align: center;">Enter Detals</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Car Brand</h5>
+               <!-- input start -->
+               <input id="brand" type="text" class="form-control" placeholder="Car Brand" >
+                   <!-- inputend  -->
+
+                   <h5 class="card-title">Price</h5>
+               <!-- input start -->
+               <input id="price" type="text" class="form-control" placeholder="Enter Price" >
+                   <!-- inputend  -->
+
+                   <h5 class="card-title">Key</h5>
+               <!-- input start -->
+               <input id="key1" type="text" class="form-control" placeholder="Enter Key" >
+                   <!-- inputend  -->
+
+                   <button onclick="add_car()" type="button" class="btn btn-outline-success my-4 mx-5 px-5">Store Records</button>
+              
+            </div>
+          </div>
+</div>
+<!-- card 1 end -->
+<!-- CARD 2 START -->
+   <div class="col-lg-3 ">
+
+<div style="box-shadow: 2px 2px 2px gray;height: 400px;" class="card ">
+            <div class="card-header">
+             <span style="color: blue; font-size: x-large;font-weight:500;text-align: center;">Enter key to retrive Item</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Key</h5>
+               <!-- input start -->
+               <input id="key2" type="text" class="form-control" placeholder="key" >
+                   <!-- inputend  -->
+
+                  
+
+                   <button onclick="get_car()" type="button" class="btn btn-outline-primary my-4 mx-5 px-5">Retrieve Records</button>
+                   <div id="result" class="result"></div>
+              
+            </div>
+          </div>
+</div>
+
+   <!-- </div> -->
+
+<!-- CARD 2 END -->
+
+<!-- card 3 start -->
+<div class="col-lg-3">
+
+    <div style="box-shadow: 2px 2px 2px gray; height: 400px;" class="card ">
+                <div class="card-header">
+                 <span style="color: blue; font-size: x-large;font-weight:500;text-align: center;">Enter key to Delete Item</span>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Key</h5>
+                   <!-- input start -->
+                   <input id="key3" type="text" class="form-control" placeholder="key" >
+                       <!-- inputend  -->
+    
+                      
+    
+                       <button onclick="delete_car()" type="button" class="btn btn-outline-danger my-4 mx-5 px-5">Remove Records</button>
+                  
+                </div>
+              </div>
+    </div>
+    
+       <!-- </div> -->
+
+<!-- card 3 end -->
+
+</div>
+
+<!-- CLEAR BUTTON -->
+<div class="row">
+    <div class="col-lg-12 container">
+<button onclick="clr()" type="button" class="btn btn-dark mx-5 px-5">Clear  All</button>
+</div>
+</div>
+
+</html>
